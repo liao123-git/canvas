@@ -22,3 +22,4 @@
 ##### fill(); 通过填充路径的内容区域生成实心的图形。
 ##### moveTo(x,y); 移动笔触
 ##### lineTo(x,y); 线
+##### arc(x, y, radius, startAngle, endAngle, anticlockwise); 圆弧,函数中表示角的单位是弧度，不是角度。角度与弧度的js表达式: 弧度=(Math.PI/180)*角度。
