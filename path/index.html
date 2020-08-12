@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>path</title>
+</head>
+<body onload="draw()">
+<canvas id="tutorial" width="150" height="150"></canvas>
+<script>
+    function draw(){
+        var canvas = document.getElementById('tutorial');
+        if (canvas.getContext){
+            var ctx = canvas.getContext('2d');
+
+            ctx.beginPath();
+            ctx.moveTo(75, 50);
+            ctx.lineTo(100, 75);
+            ctx.lineTo(100, 25);
+            ctx.lineTo(75, 50);
+            ctx.stroke();
+            ctx.closePath();
+
+            ctx.beginPath();
+            ctx.moveTo(75, 50);
+            ctx.lineTo(50, 75);
+            ctx.lineTo(50, 25);
+            ctx.fill();
+        }
+    }
+</script>
+</body>
+</html>
