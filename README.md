@@ -23,3 +23,5 @@
 ##### moveTo(x,y); 移动笔触
 ##### lineTo(x,y); 线
 ##### arc(x, y, radius, startAngle, endAngle, anticlockwise); 圆弧,函数中表示角的单位是弧度，不是角度。角度与弧度的js表达式: 弧度=(Math.PI/180)*角度。
+##### 注意点：
+##### canvas标签必须有width和height属性否则矩形或路径会无法显示（如果想要让canvas占满全屏就在js里修改canvas的width和height属性）
