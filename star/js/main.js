@@ -48,7 +48,7 @@ class main {
             this.stars.forEach(star => star.timer());
             //星星连线
             this.drawLine();
-        },50);
+        },33);
     }
     drawLine(){
         this.stars.forEach((star,key)=>{
